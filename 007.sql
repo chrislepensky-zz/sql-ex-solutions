@@ -1,17 +1,17 @@
-SELECT pc.model, price 
-FROM pc 
-JOIN product 
-ON product.model = pc.model 
+SELECT PC.model, price 
+FROM PC 
+JOIN Product 
+ON Product.model = PC.model 
 WHERE maker = 'B'
 UNION
-SELECT laptop.model, price 
-FROM laptop 
-JOIN product 
-ON product.model = laptop.model 
+SELECT Laptop.model, price 
+FROM Laptop 
+JOIN Product 
+ON Product.model = Laptop.model 
 WHERE maker = 'B'
 UNION
-SELECT printer.model, price 
-FROM printer 
-JOIN product 
-ON product.model = printer.model 
+SELECT Printer.model, price 
+FROM Printer 
+JOIN Product 
+ON Product.model = Printer.model 
 WHERE maker = 'B'
