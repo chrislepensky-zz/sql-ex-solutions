@@ -1,3 +1,4 @@
+/*Find out the models and prices for all the products (of any type) produced by maker B.*/
 SELECT PC.model, price 
 FROM PC 
 JOIN Product 
